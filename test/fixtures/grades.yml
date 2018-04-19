@@ -2,10 +2,10 @@
 
 one:
   student_id: 1
-  course_code: 1
-  grade_s: 1.5
+  course_id: 1
+  grade: 1.5
 
 two:
   student_id: 1
-  course_code: 1
-  grade_s: 1.5
+  course_id: 1
+  grade: 1.5

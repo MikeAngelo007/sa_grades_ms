@@ -46,6 +46,6 @@ class GradesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def grade_params
-      params.require(:grade).permit(:student_id, :course_code, :grade_s)
+      params.permit(:student_id, :course_id, :grade_value)
     end
 end

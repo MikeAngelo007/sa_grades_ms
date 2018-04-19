@@ -12,7 +12,7 @@ class GradesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create grade" do
     assert_difference('Grade.count') do
-      post grades_url, params: { grade: { course_code: @grade.course_code, grade_s: @grade.grade_s, student_id: @grade.student_id } }, as: :json
+      post grades_url, params: { grade: { course_id: @grade.course_id, grade: @grade.grade, student_id: @grade.student_id } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class GradesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update grade" do
-    patch grade_url(@grade), params: { grade: { course_code: @grade.course_code, grade_s: @grade.grade_s, student_id: @grade.student_id } }, as: :json
+    patch grade_url(@grade), params: { grade: { course_id: @grade.course_id, grade: @grade.grade, student_id: @grade.student_id } }, as: :json
     assert_response 200
   end
 
